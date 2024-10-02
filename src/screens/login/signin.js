@@ -5,7 +5,7 @@ import Nextarrow from '../../components/backarroe';
 
 const typingDuration = 100;
 
-export default function Login() {
+export default function Sigin() {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
