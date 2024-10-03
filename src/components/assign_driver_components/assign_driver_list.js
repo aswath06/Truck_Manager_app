@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import {
   FlatList,
   StyleSheet,
@@ -14,13 +14,13 @@ import drivers from '../../../res/assign_driver_details.json';
 import Assign_details from './assign_details';
 
 // Get device width
-const { width } = Dimensions.get('window');
+const {width} = Dimensions.get('window');
 
 const AssignDriverCard = () => {
   const [selectedDriver, setSelectedDriver] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
 
-  const handleCardPress = (driver) => {
+  const handleCardPress = driver => {
     setSelectedDriver(driver);
     setModalVisible(!modalVisible);
   };
@@ -34,13 +34,13 @@ const AssignDriverCard = () => {
     <View style={styles.container}>
       <FlatList
         data={drivers}
-        renderItem={({ item }) => (
+        renderItem={({item}) => (
           <DriverCard
             driver={item}
             onPress={() => handleCardPress(item)} // Passing the onPress prop
           />
         )}
-        keyExtractor={(item) => item.id.toString()}
+        keyExtractor={item => item.id.toString()}
         numColumns={2}
         contentContainerStyle={styles.list}
       />
@@ -50,12 +50,11 @@ const AssignDriverCard = () => {
           animationType="slide"
           transparent={true}
           visible={modalVisible}
-          onRequestClose={closeModal}
-        >
+          onRequestClose={closeModal}>
           <View style={styles.modalContainer}>
             <View style={styles.modalContent}>
               <Image
-                source={{ uri: selectedDriver.imageUrl }}
+                source={{uri: selectedDriver.imageUrl}}
                 style={styles.driverImage}
               />
               <Text style={styles.driverName}>{selectedDriver.name}</Text>
@@ -65,14 +64,33 @@ const AssignDriverCard = () => {
                   : 'Address not available'}
               </Text>
               <View>
-              <Assign_details/>
-              <Assign_details/>
-              <Assign_details/>
-              <Assign_details/>
-              <Assign_details/>
+                <Assign_details
+                  topicText={selectedDriver?.topic}
+                  memberStatus={selectedDriver?.concept}
+                />
+                <Assign_details
+                  topicText={selectedDriver?.topic1}
+                  memberStatus={selectedDriver?.concept1}
+                />
+                <Assign_details
+                  topicText={selectedDriver?.topic2}
+                  memberStatus={selectedDriver?.concept2}
+                />
+                <Assign_details
+                  topicText={selectedDriver?.topic3}
+                  memberStatus={selectedDriver?.concept3}
+                />
+                <Assign_details
+                  topicText={selectedDriver?.topic4}
+                  memberStatus={selectedDriver?.concept4}
+                />
+                <Assign_details
+                  topicText={selectedDriver?.topic5}
+                  memberStatus={selectedDriver?.concept5}
+                />
               </View>
               <TouchableOpacity style={styles.assignbtn} onPress={closeModal}>
-                <Text style={{ color: '#fff', fontWeight: '800' }}>Assign</Text>
+                <Text style={{color: '#fff', fontWeight: '800'}}>Assign</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -110,7 +128,7 @@ const styles = StyleSheet.create({
     height: width * 0.25, // Adjust image height
     borderRadius: (width * 0.25) / 2, // Circular image
     position: 'absolute',
-    bottom: '90%',
+    marginTop: -(width * 0.25) / 2,
     borderWidth: 1.5,
     borderColor: '#de6c21',
   },
