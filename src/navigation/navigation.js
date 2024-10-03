@@ -11,7 +11,7 @@ const Stack = createStackNavigator();
 export default function Navigation() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Fullstart">
+      <Stack.Navigator initialRouteName="Assign_drivers">
       <Stack.Screen
           name="Fullstart"
           component={Fullstart}
