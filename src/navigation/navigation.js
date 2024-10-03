@@ -10,7 +10,7 @@ const Stack = createStackNavigator();
 export default function Navigation() {
   return (
     <NavigationContainer>
-    <Stack.Navigator initialRouteName="Enable_Location">
+    <Stack.Navigator initialRouteName="Add_Driver">
       <Stack.Screen 
         name="Assign_drivers" 
         component={Assign_drivers} 
