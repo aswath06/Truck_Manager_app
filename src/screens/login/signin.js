@@ -179,7 +179,7 @@ export default function Sigin() {
       )}
 
       <TouchableOpacity onPress={step === 3 ? handleLogin : handleNextArrowClick} style={styles.backArrowContainer1}>
-        <Nextarrow style={{ left: 5 }} />
+        <Nextarrow style={{ left: 0.5 }} />
       </TouchableOpacity>
 
       <View style={styles.progressContainer}>
@@ -214,8 +214,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     position: 'absolute',
-    top: 650,
-    right: 20,
+    top: 570,
+    right: 55,
   },
   errorText: {
     color: 'red',
@@ -261,9 +261,9 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     marginTop: 20,
     position: 'absolute',
-    top: 700,
-    right: 20,
-    width: 350,
+    top: 630,
+    right: 40,
+    width: 300,
     marginRight: 10,
   },
   progressBar: {

@@ -187,12 +187,21 @@ const StaticCard = () => {
         <MapView
           provider={PROVIDER_GOOGLE}
           style={styles.map}
+          // region={{
+          //   latitude: 37.78825,
+          //   longitude: -122.4324,
+          //   latitudeDelta: 0.015,
+          //   longitudeDelta: 0.0121,
+          // }}
           region={{
-            latitude: 9.8475,
-            longitude: 78.4844,
+feature-branch-thulasi
+            latitude: 9.6775,
+            longitude: 78.4736,
+
             latitudeDelta: 0.015,
             longitudeDelta: 0.0121,
           }}
+          
           showsUserLocation={true}
           loadingEnabled={true}
           loadingIndicatorColor="#666666"
