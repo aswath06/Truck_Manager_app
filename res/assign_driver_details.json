@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "name": "Thalapathy",
+      "dri_id": "1234567",
+      "distance": "200 Meters",
+      "rating": 4.5,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdYeRFfJgOrVQVI9KSS-cKXiMUOoA-6lgtmQ&s",
+      "address": "6,Somanathapura Agraharam,Manamadurai-630606",
+      "topic": "Level",
+      "concept": "Gold Member"
+    },
+    {
+      "id": 2,
+      "name": "IlayaThalapathy",
+      "dri_id": "0000101",
+      "distance": "200 Meters",
+      "rating": 4.5,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqCgNG9UfNdPgiSyTwpWU22nmG1NOmSeeBTA&s",
+      "address": "6,Somanathapura Agraharam,Manamadurai-630606",
+      "topic": "Level",
+      "concept": "Gold Member"
+    },
+    {
+      "id": 3,
+      "name": "Vijay",
+      "dri_id": "0000101",
+      "distance": "200 Meters",
+      "rating": 4.5,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrD7GpfI2jIXti4swhl15GEVfaf0g0z-f2_A&s",
+      "address": "6,Somanathapura Agraharam,Manamadurai-630606",
+      "topic": "Level",
+      "concept": "Gold Member"
+    },
+    {
+      "id": 4,
+      "name": "Master",
+      "dri_id": "0000101",
+      "distance": "200 Meters",
+      "rating": 4.5,
+      "imageUrl": "https://img.etimg.com/thumb/width-1200,height-1200,imgsize-71560,resizemode-75,msid-99202332/magazines/panache/thalapathy-vijay-makes-instagram-debut-collects-over-4-mn-followers-in-a-day.jpg",
+      "address": "6,Somanathapura Agraharam,Manamadurai-630606",
+      "topic": "Level",
+      "concept": "Gold Member"
+    },
+    {
+      "id": 5,
+      "name": "VetriMaran",
+      "dri_id": "0000101",
+      "distance": "200 Meters",
+      "rating": 4.5,
+      "imageUrl": "https://assets.thehansindia.com/h-upload/2023/01/19/1330598-varisu-cast-fees.webp",
+      "address": "6,Somanathapura Agraharam,Manamadurai-630606" ,
+      "topic": "Level",
+      "concept": "Gold Member"
+    }
+  ]

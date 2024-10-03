@@ -1,10 +1,17 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
-import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
+import {
+  View,
+  Text,
+  Image,
+  StyleSheet,
+  TouchableOpacity,
+  ScrollView,
+} from 'react-native';
+import MapView, {PROVIDER_GOOGLE} from 'react-native-maps';
 import Call from '../../../assets/icons/Call';
 import Location from '../../../assets/icons/Location';
 import Start from '../../../assets/icons/Start';
-import Arrow from '../../../assets/icons/arrow_back'
+import Arrow from '../../../assets/icons/arrow_back';
 
 const StaticCard = () => {
   const handleCardPress = () => {
@@ -13,16 +20,24 @@ const StaticCard = () => {
 
   return (
     <ScrollView>
-      <Arrow style={{top:38,left:30}}/> 
-        <Text style={{ fontSize: 19, fontWeight: '700', bottom: 0, marginTop: 10, color: 'black', left: 60 }}>
-              My Job
-        </Text>
+      <Arrow style={{top: 38, left: 30}} />
+      <Text
+        style={{
+          fontSize: 19,
+          fontWeight: '700',
+          bottom: 0,
+          marginTop: 10,
+          color: 'black',
+          left: 60,
+        }}>
+        My Job
+      </Text>
       <TouchableOpacity style={styles.card} onPress={handleCardPress}>
-        <Text style={{ fontSize: 16, bottom: 7, marginTop: 5, color: '#000' }}>
+        <Text style={{fontSize: 16, bottom: 7, marginTop: 5, color: '#000'}}>
           These are the available trucks
         </Text>
-        <View style={{ flexDirection: 'row' }}>
-          <View style={{ flexDirection: 'column' }}>
+        <View style={{flexDirection: 'row'}}>
+          <View style={{flexDirection: 'column'}}>
             <Image
               source={require('../../../assets/images/Profile.jpg')}
               style={styles.image}
@@ -31,34 +46,37 @@ const StaticCard = () => {
           </View>
 
           <View style={styles.content}>
-            <View style={{ flexDirection: 'row' }}>
+            <View style={{flexDirection: 'row'}}>
               <Text style={styles.textStyle}>Task</Text>
-              <Text style={styles.textStyle}>                         Chemical Delivery</Text>
+              <Text style={styles.textStyle}> Chemical Delivery</Text>
             </View>
-            <View style={{ flexDirection: 'row' }}>
+            <View style={{flexDirection: 'row'}}>
               <Text style={styles.textStyle}>Departed</Text>
-              <Text style={styles.textStyle}>                 20 Feb, 05:00 PM</Text>
+              <Text style={styles.textStyle}> 20 Feb, 05:00 PM</Text>
             </View>
-            <View style={{ flexDirection: 'row' }}>
+            <View style={{flexDirection: 'row'}}>
               <Text style={styles.textStyle}>Current Location</Text>
               <View>
-                <Text style={styles.textStyle}>    123 Main Street,</Text>
-                <Text style={styles.textStyle}>    Anytown, IND 845103</Text>
+                <Text style={styles.textStyle}> 123 Main Street,</Text>
+                <Text style={styles.textStyle}> Anytown, IND 845103</Text>
               </View>
             </View>
-            <View style={{ flexDirection: 'row' }}>
+            <View style={{flexDirection: 'row'}}>
               <Text style={styles.textStyle}>Trip Cost</Text>
-              <Text style={styles.textStyle}>                  Rs 10000</Text>
+              <Text style={styles.textStyle}> Rs 10000</Text>
             </View>
           </View>
         </View>
         <View style={styles.hr} />
-        <View style={{ flexDirection: 'row' }}>
+        <View style={{flexDirection: 'row'}}>
           <View
-            style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 10 }}
-          >
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              marginBottom: 10,
+            }}>
             <Call />
-            <Text style={{ marginLeft: 5, color: 'orange', fontSize: 18 }}>
+            <Text style={{marginLeft: 5, color: 'orange', fontSize: 18}}>
               Get in Contact
             </Text>
           </View>
@@ -68,8 +86,7 @@ const StaticCard = () => {
               marginLeft: 110,
               color: 'red',
               fontSize: 18,
-            }}
-          >
+            }}>
             Decline
           </Text>
         </View>
@@ -77,67 +94,95 @@ const StaticCard = () => {
 
       {/* Second Card (Orange Card) */}
       <TouchableOpacity style={styles.orangeCard} onPress={handleCardPress}>
-        <Text style={{ fontSize: 19, fontWeight: '700', bottom: 7, marginTop: 5, color: '#fff', left: 120 }}>
+        <Text
+          style={{
+            fontSize: 19,
+            fontWeight: '700',
+            bottom: 7,
+            marginTop: 5,
+            color: '#fff',
+            left: 120,
+          }}>
           Truck Info
         </Text>
-        <View style={{ flexDirection: 'row' }}>
+        <View style={{flexDirection: 'row'}}>
           <View style={styles.content}>
-            <View style={{ flexDirection: 'row' }}>
-              <Text style={[styles.textStyle2, { color: '#fff', marginLeft: 20 }]}>Vehicle number  :</Text>
-              <Text style={[styles.textStyle2, { color: '#fff' }]}>
+            <View style={{flexDirection: 'row'}}>
+              <Text
+                style={[styles.textStyle2, {color: '#fff', marginLeft: 20}]}>
+                Vehicle number :
+              </Text>
+              <Text style={[styles.textStyle2, {color: '#fff'}]}>
                 {'  '} TN39CK1288
               </Text>
             </View>
-            <View style={{ flexDirection: 'row' }}>
-              <Text style={[styles.textStyle2, { color: '#fff', marginLeft: 20 }]}>Vehicle Rc           :</Text>
-              <Text style={[styles.textStyle2, { color: '#fff' }]}>
+            <View style={{flexDirection: 'row'}}>
+              <Text
+                style={[styles.textStyle2, {color: '#fff', marginLeft: 20}]}>
+                Vehicle Rc :
+              </Text>
+              <Text style={[styles.textStyle2, {color: '#fff'}]}>
                 {'  '} 3/10/2024
               </Text>
             </View>
-            <View style={{ flexDirection: 'row' }}>
-              <Text style={[styles.textStyle2, { color: '#fff', marginLeft: 20 }]}>Insurance            :</Text>
-              <Text style={[styles.textStyle2, { color: '#fff' }]}>
+            <View style={{flexDirection: 'row'}}>
+              <Text
+                style={[styles.textStyle2, {color: '#fff', marginLeft: 20}]}>
+                Insurance :
+              </Text>
+              <Text style={[styles.textStyle2, {color: '#fff'}]}>
                 {'  '} 5/6/2024
               </Text>
             </View>
             <View>
-              <Image source={require('../../../assets/images/Truck1.png')} style={styles.image1} />
+              <Image
+                source={require('../../../assets/images/Truck1.png')}
+                style={styles.image1}
+              />
             </View>
           </View>
         </View>
       </TouchableOpacity>
 
       {/* Third Card (Route and Map) */}
-      <Text style={[styles.textStyle4, { left: 25 }]}>Route</Text>
+      <Text style={[styles.textStyle4, {left: 25}]}>Route</Text>
       <TouchableOpacity style={styles.thirdCard} onPress={handleCardPress}>
-        <View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
-          <View style={{ flexDirection: 'row' }}>
-          <Start style={{marginTop:15,marginRight:4}} />
-            <Text style={styles.textStyle4}>
-               Warrington,
+        <View
+          style={{flexDirection: 'column', justifyContent: 'space-between'}}>
+          <View style={{flexDirection: 'row'}}>
+            <Start style={{marginTop: 15, marginRight: 4}} />
+            <Text style={styles.textStyle4}>Warrington,</Text>
+            <Text style={{top: 6, left: 2, color: 'black', fontSize: 16}}>
+              PA 76102
             </Text>
-            <Text style={{top:6,left:2,  color:'black',fontSize:16}}>PA 76102</Text>
           </View>
 
-          <Text style={{ left: 25,bottom:8 }}>Jun 22 10:00 AM EST</Text>
+          <Text style={{left: 25, bottom: 8}}>Jun 22 10:00 AM EST</Text>
         </View>
         <View style={styles.verticalLine} />
-        <View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
-          <View style={{ flexDirection: 'row' }}>
-          <Location style={{marginTop:10,marginRight:4}} />
-            <Text style={styles.textStyle4}>
-               Midland,
+        <View
+          style={{flexDirection: 'column', justifyContent: 'space-between'}}>
+          <View style={{flexDirection: 'row'}}>
+            <Location style={{marginTop: 10, marginRight: 4}} />
+            <Text style={styles.textStyle4}>Midland,</Text>
+            <Text style={{top: 6, left: 2, color: 'black', fontSize: 16}}>
+              TX 79705
             </Text>
-        <Text style={{top:6,left:2,  color:'black',fontSize:16}}>TX 79705</Text>
           </View>
 
-          <Text style={{ left: 25 ,bottom:8}}>Jun 22 10:00 AM EST</Text>
+          <Text style={{left: 25, bottom: 8}}>Jun 22 10:00 AM EST</Text>
         </View>
         <Text>Recieved 59 mins ago</Text>
       </TouchableOpacity>
 
       {/* Map Section */}
-      <Text style={[styles.textStyle4, { marginLeft: 25, marginTop: 20,bottom:10 }]}>Map</Text>
+      <Text
+        style={[
+          styles.textStyle4,
+          {marginLeft: 25, marginTop: 20, bottom: 10},
+        ]}>
+        Map
+      </Text>
       <View style={styles.mapContainer}>
         <MapView
           provider={PROVIDER_GOOGLE}
@@ -149,8 +194,10 @@ const StaticCard = () => {
           //   longitudeDelta: 0.0121,
           // }}
           region={{
+feature-branch-thulasi
             latitude: 9.6775,
             longitude: 78.4736,
+
             latitudeDelta: 0.015,
             longitudeDelta: 0.0121,
           }}
@@ -161,7 +208,6 @@ const StaticCard = () => {
           loadingBackgroundColor="#eeeeee"
         />
       </View>
-
     </ScrollView>
   );
 };
@@ -212,7 +258,7 @@ const styles = StyleSheet.create({
     shadowRadius: 8,
     elevation: 15,
     marginHorizontal: 20,
-    marginVertical:8,
+    marginVertical: 8,
     paddingHorizontal: 15,
     paddingTop: 15,
   },
@@ -223,8 +269,8 @@ const styles = StyleSheet.create({
     borderColor: '#000',
     borderWidth: 1,
     marginHorizontal: 20,
-    top:10,
-    marginBottom:10,
+    top: 10,
+    marginBottom: 10,
     padding: 10,
   },
   hr: {
@@ -279,7 +325,7 @@ const styles = StyleSheet.create({
     height: 200,
     borderRadius: 15,
     overflow: 'hidden',
-    marginBottom:20
+    marginBottom: 20,
   },
 });
 
