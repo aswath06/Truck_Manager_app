@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import DriverCard from './assign_driver_card';
 import drivers from '../../../res/assign_driver_details.json';
+import Assign_details from './assign_details';
 
 // Get device width
 const { width } = Dimensions.get('window');
@@ -63,6 +64,13 @@ const AssignDriverCard = () => {
                   ? selectedDriver.address
                   : 'Address not available'}
               </Text>
+              <View>
+              <Assign_details/>
+              <Assign_details/>
+              <Assign_details/>
+              <Assign_details/>
+              <Assign_details/>
+              </View>
               <TouchableOpacity style={styles.assignbtn} onPress={closeModal}>
                 <Text style={{ color: '#fff', fontWeight: '800' }}>Assign</Text>
               </TouchableOpacity>
@@ -80,6 +88,7 @@ const styles = StyleSheet.create({
     padding: width * 0.03, // Adjust padding based on screen width
   },
   list: {
+    width: '100%',
     justifyContent: 'space-between',
     paddingBottom: width * 0.05, // Adjust bottom padding
   },
@@ -109,7 +118,7 @@ const styles = StyleSheet.create({
     fontSize: width * 0.05, // Adjust font size based on screen width
     fontWeight: '900',
     marginBottom: width * 0.02, // Adjust margin
-    paddingTop: '10%',
+    marginTop: '15%',
     color: 'black',
   },
   driverAddress: {
