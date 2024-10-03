@@ -5,7 +5,6 @@ import { createStackNavigator } from '@react-navigation/stack'
 import Assign_drivers from '../screens/Admin/Job_assign/assign_Drivers';
 import Add_Driver from '../screens/Admin/Driver_page/Add_Driver';
 import EnableLocationScreen from '../screens/Authentication/location';
-import Getstarted from '../screens/login/get-started';
 import Fullstart from '../screens/login/Fullstart';
 import Login from '../screens/login/login';
 import Sigin from '../screens/login/signin';
