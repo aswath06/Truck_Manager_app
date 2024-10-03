@@ -7,15 +7,39 @@ import Add_Driver from '../screens/Admin/Driver_page/Add_Driver';
 import EnableLocationScreen from '../screens/Authentication/location';
 import Getstarted from '../screens/login/get-started';
 import Fullstart from '../screens/login/Fullstart';
+import Login from '../screens/login/login';
+import Sigin from '../screens/login/signin';
+import Driver_dashboard from '../screens/drivers/driver_dashboard';
+import Admin_dashboard from '../screens/Admin/Admin_dashboard';
 
 const Stack = createStackNavigator();
 export default function Navigation() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Fullstart">
-      <Stack.Screen
+        <Stack.Screen
           name="Fullstart"
           component={Fullstart}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Driver_dash"
+          component={Driver_dashboard}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Admin_dash"
+          component={Admin_dashboard}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Sigin"
+          component={Sigin}
           options={{ headerShown: false }}
         />
         <Stack.Screen

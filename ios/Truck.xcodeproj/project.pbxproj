@@ -44,7 +44,7 @@
 		6797A7125E34E38925DD4C13 /* libPods-Truck-TruckTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Truck-TruckTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C898CD6A2F07D0A0C2F497C /* Pods-Truck-TruckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Truck-TruckTests.release.xcconfig"; path = "Target Support Files/Pods-Truck-TruckTests/Pods-Truck-TruckTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Truck/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		928FC95FC43AD3FBC2CEC02E /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Truck/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		928FC95FC43AD3FBC2CEC02E /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = Truck/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		C48B470E6E5DA379C207457D /* libPods-Truck.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Truck.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -273,7 +273,7 @@
 		};
 		9272E4E8AB4BF5918AA2BBF3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
@@ -283,7 +283,7 @@
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Truck/Pods-Truck-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Truck/Pods-Truck-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
@@ -312,7 +312,7 @@
 		};
 		B9F8223AEEA49B260A6D91D6 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
@@ -322,7 +322,7 @@
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Truck/Pods-Truck-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Truck/Pods-Truck-resources.sh\"\n";
 			showEnvVarsInLog = 0;
